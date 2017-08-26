@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.7 $helvetica;
   color: $darkGray;
 }
 
@@ -151,7 +151,19 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: $white;
+  position: fixed;
+}
+
+#main {
+  margin-top: 120px;
+  @include mobile {
+    margin-top: 240px;
+  }
 }
 
 .masthead {
